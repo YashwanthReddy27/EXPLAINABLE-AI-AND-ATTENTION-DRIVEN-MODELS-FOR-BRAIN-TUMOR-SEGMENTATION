@@ -5,6 +5,7 @@ Dataset link: [https://www.kaggle.com/datasets/pkdarabi/brain-tumor-image-datase
 
 ## Method
 Our method integrates advanced techniques, such as saliency maps, attention layers, and morphological operations, to enhance the performance of the U-Net model for brain tumor classification and segmentation. These additions improve feature localization, model interpretability, and segmentation accuracy.
+
  • Saliency Maps: Saliency maps highlight the most critical regions of the input image that influence the model’s predictions. By incorporating saliency maps into the training process,
  we emphasize the areas of interest, such as tumor boundaries, ensuring that the model learns features most relevant to the task.
  • Attention Layers: We enhance the U-Net architecture by adding attention mechanisms. These layers adaptively focus on the most informative parts of the feature maps during training, reducing noise from irrelevant regions. This improves the model’s ability to capture fine details in tumor boundaries while retaining global contextual information.
