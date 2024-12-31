@@ -11,3 +11,13 @@ Our method integrates advanced techniques, such as saliency maps, attention laye
  + Attention Layers: We enhance the U-Net architecture by adding attention mechanisms. These layers adaptively focus on the most informative parts of the feature maps during training, reducing noise from irrelevant regions. This improves the model’s ability to capture fine details in tumor boundaries while retaining global contextual information.
  + Morphological Operations: Post-processing with morphological operations, such as dilation and erosion, refines the segmentation masks. These operations help to smooth edges, remove noise, and fill gaps in the predicted tumor regions, leading to cleaner and more clinically helpful segmentation results.
 
+The attention mechanism enhances features from the encoder for the decoder using spatial attention. Skip connections and gating signals from the decoder are reduced in dimensions through 1x1 convolutions, combined, passed through ReLU, and processed using sigmoid activation to create a spatial mask. This mask refines the skip connection, improving segmentation by focusing on critical regions.
+
++ Improved Localization: Attention gates enhance relevant regions and ignore background noise, improving segmentation accuracy.
++ Better Generalization: Emphasizing important features helps the model generalize and avoid overfitting.
+Spatial attention mechanisms assign higher importance to informative pixels, improving boundary precision in tasks like tumor segmentation. Channel attention mechanisms amplify relevant feature maps, leading to robust tumor representation.
+
+Morphological operations refine segmentation by smoothing edges, connecting regions, filling holes, and enhancing boundary precision, improving metrics like Dice Coefficient and IoU.
+
+Explainable AI (XAI)
+XAI enhances interpretability using saliency maps, highlighting influential areas of an input image.
