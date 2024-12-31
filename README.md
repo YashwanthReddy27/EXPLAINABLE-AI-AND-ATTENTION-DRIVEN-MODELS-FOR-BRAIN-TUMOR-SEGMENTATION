@@ -46,3 +46,7 @@ Prediction
 ![Example Image](./Images/deeplab.png) 
 Saliency Map
 ![Example Image](./Images/salmap.png)
+Empirical Results
+![Example Image](./Images/empresults.png)
+## Conclusion
+ We obtained results from implementing and comparing four architectures, U-Net, LinkNet, SegNet, and the customized Deeplab model, demonstrating how effectively attention mechanisms and saliency maps are incorporated into brain tumor segmentation and detection. The attention layers  significantly improved the model’s ability to prioritize critical regions, enhancing segmentation accuracy. The key observation was that we could efficiently perform an efficiency comparison using the IOU score, Accuracy score, and Dice coefficient metrics, including attention mechanisms and saliency maps, to better visualize where the model is focusing
