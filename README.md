@@ -4,6 +4,7 @@ The dataset contains around 2200 images containing two classes, Tumor(1)/No tumo
 Dataset link: [https://www.kaggle.com/datasets/pkdarabi/brain-tumor-image-dataset-semantic-segmentation/data](url)
 
 ## Method
+<p style="text-align: justify;">
 Our method integrates advanced techniques, such as saliency maps, attention layers, and morphological operations, to enhance the performance of the U-Net model for brain tumor classification and segmentation. These additions improve feature localization, model interpretability, and segmentation accuracy.
 
  + Saliency Maps: Saliency maps highlight the most critical regions of the input image that influence the model’s predictions. By incorporating saliency maps into the training process,
@@ -24,3 +25,4 @@ XAI enhances interpretability using saliency maps, highlighting influential area
 Built Models
 1. U-NET
 The U-Net model with attention gates is a sophisticated architecture for medical image segmentation tasks, such as brain tumor detection. It features an encoder (contracting path) and a decoder (expanding path). The encoder progressively down-samples the input image through convolutional layers and max-pooling, employing dropout layers to prevent overfitting. Each encoder block contains two 3x3 convolutional layers activated by ReLU. Two 3x3 convolutional layers with 1024 filters capture the most complex features at the bottleneck. In the decoder, the model up-samples feature maps using transposed convolution layers, doubling their spatial dimensions at each step. Attention gates within the decoder dynamically weight the encoder feature before concatenation, which helps highlight relevant areas and suppress irrelevant ones, thus improving segmentation accuracy. Each decoder block includes an attention gate and two 3x3 convolutional layers to refine the feature maps. The output layer is a 1x1 convolution with a sigmoid activation, generating a binary mask for precise segmentation. This attention mechanism significantly enhances the model’s ability to focus on essential structures, making it particularly useful for high-accuracy medical image analysis.
+</p>
