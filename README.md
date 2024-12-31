@@ -42,4 +42,7 @@ XAI enhances interpretability using saliency maps, highlighting influential area
 
 ## Results
  After all the models were trained, namely the U-Net, LinkNet, SegNet, and the modified DeepLab  model, the modified DeepLab model gave the highest and best performance with an accuracy score of 97.72%. Each model will give output in these formats
- 
+Prediction 
+![Example Image](./Images/deeplab.png) 
+Saliency Map
+![Example Image](./Images/salmap.png)
