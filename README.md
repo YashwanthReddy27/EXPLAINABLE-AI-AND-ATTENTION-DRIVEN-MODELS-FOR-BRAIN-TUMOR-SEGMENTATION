@@ -6,6 +6,7 @@ The dataset contains around 2200 images, divided into Tumor(1) and no tumor(0). 
 Dataset link: [https://www.kaggle.com/datasets/pkdarabi/brain-tumor-image-dataset-semantic-segmentation/data](url)
 
 ## Method
+<div align="justify">
 Our method integrates advanced techniques, such as saliency maps, attention layers, and morphological operations, to enhance the performance of the U-Net model for brain tumor classification and segmentation. These additions improve feature localization, model interpretability, and segmentation accuracy.
 
 + **Saliency Maps**: Saliency maps highlight the most critical regions of the input image that influence the model’s predictions. By incorporating saliency maps into the training process, we emphasize the areas of interest, such as tumor boundaries, ensuring that the model learns features most relevant to the task.
@@ -20,7 +21,7 @@ The attention mechanism enhances features from the encoder for the decoder using
 Spatial attention mechanisms assign higher importance to informative pixels, improving boundary precision in tasks like tumor segmentation. Channel attention mechanisms amplify relevant feature maps, leading to robust tumor representation.
 
 Morphological operations refine segmentation by smoothing edges, connecting regions, filling holes, and enhancing boundary precision, improving metrics like Dice Coefficient and IoU.
-
+</div>
 ### Explainable AI (XAI)
 XAI enhances interpretability using saliency maps, highlighting influential areas of an input image.
 ### Baseline Model
