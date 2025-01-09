@@ -1,4 +1,6 @@
 # EXPLAINABLE-AI-AND-ATTENTION-DRIVEN-MODELS-FOR-BRAIN-TUMOR-SEGMENTATION
+# Project Description
+This repository contains the implementation of 4 baseline models combined with attention layers, which are trained from scratch without using any pre-trained models, along with the generation of saliency maps to better understand the models to the clinicians.
 ## Dataset
 The dataset contains around 2200 images, divided into Tumor(1) and no tumor(0). The training portion is split into 70%, validation into 20%, and testing into 10%.
 Dataset link: [https://www.kaggle.com/datasets/pkdarabi/brain-tumor-image-dataset-semantic-segmentation/data](url)
