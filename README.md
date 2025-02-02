@@ -45,8 +45,7 @@ XAI enhances interpretability using saliency maps, highlighting influential area
 
 ## Experiment Details
 <div align="justify">
-## Experiment Details
-
+   
 - **Segmentation and Detection Accuracy**: The performance of the four architectures was evaluated based on Accuracy, Mean IoU, and Dice Coefficient. LinkNet achieved an accuracy of 97.27%, almost the same as the accuracy obtained by Modified DeepLab, which has the highest accuracy at 97.72%, while U-Net and SegNet attained 96.61% and 96.57%, respectively. For Mean IoU, Modified DeepLab led with 0.4817, followed by SegNet (0.4811), LinkNet (0.4802), and U-Net (0.4798). Regarding the Dice Coefficient, Modified DeepLab also performed best at 0.5756, with LinkNet at 0.5740, SegNet at 0.4494, and U-Net trailing at 0.3624. These results highlight modified DeepLab’s strong overall performance, particularly in segmentation quality, while LinkNet 6 demonstrated slightly higher accuracy.
 
 - **Interpretability**: Explainable AI, especially Saliency Maps, helped focus on tumor regions in U-Net and DeepLab, aligning closely with expert annotations. SegNet and LinkNet showed moderate interpretability, with saliency maps less consistent in localizing the smaller tumor regions.
