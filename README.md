@@ -1,6 +1,6 @@
 # EXPLAINABLE-AI-AND-ATTENTION-DRIVEN-MODELS-FOR-BRAIN-TUMOR-SEGMENTATION
 # Project Description
-This repository contains the implementation of 4 baseline models combined with attention layers, which are trained from scratch without using any pre-trained models, along with the generation of saliency maps so that the clinicians understand how it came to the prediction result for better diagnosis.
+This repository contains the implementation of four baseline models combined with attention layers, which are trained from scratch without using any pre-trained models. It also generates saliency maps so that clinicians understand how the prediction result was reached for better diagnosis.
 ## Dataset
 The dataset contains around 2200 images, divided into Tumor(1) and no tumor(0). The training portion is split into 70%, validation into 20%, and testing into 10%.
 Dataset link: [https://www.kaggle.com/datasets/pkdarabi/brain-tumor-image-dataset-semantic-segmentation/data](url)
@@ -45,8 +45,8 @@ XAI enhances interpretability using saliency maps, highlighting influential area
 
 ## Experiment Details
 <div align="justify">
-+ Segmentation and Detection Accuracy: The performance of the four architectures was evaluated based on Accuracy, Mean IoU, and Dice Coefficient. LinkNet achieved an accuracy of 97.27%, almost the same as the accuracy obtained by Modified DeepLab, which has the highest accuracy at 97.72%, while U-Net and SegNet attained 96.61% and 96.57%, respectively. For Mean IoU, Modified DeepLab led with 0.4817, followed by SegNet (0.4811), LinkNet (0.4802), and U-Net (0.4798). Regarding the Dice Coefficient, Modified DeepLab also performed best at 0.5756, with LinkNet at 0.5740, SegNet at 0.4494, and U-Net trailing at 0.3624. These results highlight modified DeepLab’s strong overall performance, particularly in segmentation quality, while LinkNet 6 demonstrated slightly higher accuracy. 
-+ Interpretability: Explainable AI, especially Saliency Maps, helped focus on tumor regions in U-Net and DeepLab, aligning closely with expert annotations.SegNet and LinkNet showed moderate interpretability, with saliency maps less consistent in localizing the smaller tumor regions.
++ Segmentation and Detection Accuracy: The performance of the four architectures was evaluated based on Accuracy, Mean IoU, and Dice Coefficient. LinkNet achieved an accuracy of 97.27%, almost the same as the accuracy obtained by Modified DeepLab, which has the highest accuracy at 97.72%, while U-Net and SegNet attained 96.61% and 96.57%, respectively. For Mean IoU, Modified DeepLab led with 0.4817, followed by SegNet (0.4811), LinkNet (0.4802), and U-Net (0.4798). Regarding the Dice Coefficient, Modified DeepLab also performed best at 0.5756, with LinkNet at 0.5740, SegNet at 0.4494, and U-Net trailing at 0.3624. These results highlight modified DeepLab’s strong overall performance, particularly in segmentation quality, while LinkNet 6 demonstrated slightly higher accuracy. \\
++ Interpretability: Explainable AI, especially Saliency Maps, helped focus on tumor regions in U-Net and DeepLab, aligning closely with expert annotations.SegNet and LinkNet showed moderate interpretability, with saliency maps less consistent in localizing the smaller tumor regions.\\
 + Efficiency: The modified Deep-Lab model demonstrated the fastest inference time, making it suitable for real-time applications, though it traded off some segmentation precision.
 </div>
 
